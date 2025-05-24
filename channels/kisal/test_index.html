@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TV Online</title>
-    <script src="video.js" defer></script>
+    <meta charset="UTF-8" />
+    <title>Unifi HD Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Shaka Player UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.5/controls.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.5/shaka-player.ui.debug.min.js"></script>
+    
+    <!-- Optional HLS fallback -->
+    <script src="//cdn.jsdelivr.net/hls.js/latest/hls.js"></script>
   </head>
-  <body>
-    <video id="video" autoplay controls></video>
+  <body style="margin:0">
+    <center>
+      <div data-shaka-player-container style="width: 100%; height: 100%;">
+        <video autoplay data-shaka-player id="video" style="width:100%; height:100%;" class="shaka-video"></video>
+      </div>
+    </center>
+
+    <!-- Video logic -->
+    <script src="./video.js"></script>
   </body>
 </html>
