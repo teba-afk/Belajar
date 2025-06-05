@@ -30,10 +30,10 @@ const manifestUri = 'https://linearjitp-playback.astro.com.my/dash-wv/linear/505
       // Configure ClearKey DRM
             player.configure({
                 drm: {
-  clearKeys: {
-    'ead23d658d40122572a6d531e9c2701b': '1ee3b52227c5c2ec9378c833d2e144ff'
-  }
-}
+                  clearKeys: {
+                    'ead23d658d40122572a6d531e9c2701b': '1ee3b52227c5c2ec9378c833d2e144ff'
+                 }
+              }
 
             });
 
