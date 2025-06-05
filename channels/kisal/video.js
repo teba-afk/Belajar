@@ -1,4 +1,4 @@
-const manifestUri = 'https://unifi-live07.secureswiftcontent.com/UnifiHD/live06.mpd';
+const manifestUri = 'https://linearjitp-playback.astro.com.my/dash-wv/linear/5057/default_ott.mpd';
 
     function initApp() {
       shaka.polyfill.installAll();
@@ -30,10 +30,11 @@ const manifestUri = 'https://unifi-live07.secureswiftcontent.com/UnifiHD/live06.
       // Configure ClearKey DRM
             player.configure({
                 drm: {
-                    clearKeys: {
-                        'R6Ega0SCLIkyDnCRbPV7DA': '4EDKKqQm33ibo4S6VhiRtA'
-                    }
-                }
+  clearKeys: {
+    'ead23d658d40122572a6d531e9c2701b': '1ee3b52227c5c2ec9378c833d2e144ff'
+  }
+}
+
             });
 
       window.player = player;
